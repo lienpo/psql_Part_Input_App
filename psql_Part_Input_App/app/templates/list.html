@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <table>
+      <thread>
+	<tr>
+	  <th>Time</th>
+	  <th>Room</th>
+	  <th>Action</th>
+	  <th>Part Number</th>
+	  <th>Lot number</th>
+	  <th>Hanger</th>
+      </thread>
+
+      <tbody>
+	{% for part in parts %}
+	<tr>
+	  <td>{{ part.ts }}</td>
+	  <td>{{ part.room }}</td>
+	  <td>{{ part.action }}</td>
+	  <td>{{ part.pn }}</td>
+	  <td>{{ part.lot }}</td>
+	  <td>{{ part.hanger }}</td>
+	</tr>
+	{% endfor %}
+      </tbody>
+     </table>
+{% endblock %}

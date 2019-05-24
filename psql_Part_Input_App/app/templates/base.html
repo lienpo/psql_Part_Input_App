@@ -1,0 +1,17 @@
+{% from "_formhelpers.html" import render_field %}
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+    <div>
+      Part_Input
+      <a href="/">New</a>
+      <a href="/list">All Parts</a>
+      <a href="/test">Tests</a>
+    </div>
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
